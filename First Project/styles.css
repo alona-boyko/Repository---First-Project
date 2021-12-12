@@ -1,0 +1,91 @@
+body {
+    background-image: url("/assets/Elements/tile.jpg");
+    background-repeat: repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+@font-face {
+    src: url("/assets/Elements/ChalkFont.otf");
+    font-family: chalk-font;
+}
+
+#header {
+    text-align: center;
+    font-size: 60px;
+    font-family: chalk-font; 
+}
+
+#title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#taskForm {
+    background-image: url("/assets/Elements/formbg.jpg");
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    padding: 3px 0px 0px 5px;
+    margin-top: 20px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 250px;
+    overflow: auto;
+    border: 2px solid black;
+}
+    
+#formHeader {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#newTaskForm {
+    position: absolute;
+    margin:  0px 0px 10px 100px;
+}
+
+#container {
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+#card { 
+    position: sticky;
+    margin-right: 10px;
+    width: 200px;
+    height: 250px;
+    background-image: url("/assets/Elements/notebg.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+#cardText {
+    padding: 10px 5px;
+    margin: 35px 4px;
+    width: 145px;
+    height: 130px;
+    overflow: auto;
+}
+
+#cardDateTime {
+    padding-left: 5px;
+    margin: 27px 4px;
+    width: 145px;
+    height: 30px;
+}
